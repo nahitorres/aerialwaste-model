@@ -1,0 +1,2 @@
+*.pth filter=lfs diff=lfs merge=lfs -text
+weights/checkpoint.pth filter=lfs diff=lfs merge=lfs -text
