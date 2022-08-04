@@ -21,3 +21,16 @@ A sigmoid function is applied over the last FC layer of the CNN to obtain the ac
 
 **Execution:** The notebook "execute_model.ipynb" provides an example of how to load the trainned model and execute it on an image to obtain the classification score as well as the CAMs.
 We provided only two example images using Google Maps instead aof the source used for training, given that the dataset contains sensitive data provided to us under a non-disclousure agreement.
+
+## License
+Creative Commons CC BY licensing scheme (see LICENSE). 
+
+## Cite us
+```
+@misc{torres2022dataset,
+  title={AerialWaste: A dataset for illegal landfill discovery in aerial images},
+  author={Torres, Rocio Nahime and Fraternali, Piero},
+  year={2022},
+}
+```
+Visit our site for more details: https://aerialwaste.org/
