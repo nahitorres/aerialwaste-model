@@ -27,21 +27,21 @@ class Net(nn.Module):
 
         self.num_classes = num_classes
         self.first_trainable = first_trainable
-        self.resnet50 = resnet50.resnet50(
+        self.resnet = resnet50.resnet50(
             # Provare con 2 e 1 nell'ultimo stride
             pretrained=pretrained, strides=(2, 2, 2, 2))
 
         # First Backbone ResNet Layer
-        self.stage0 = nn.Sequential(self.resnet50.conv1,
-                                    self.resnet50.bn1,
-                                    self.resnet50.relu,
-                                    self.resnet50.maxpool)
+        self.stage0 = nn.Sequential(self.resnet.conv1,
+                                    self.resnet.bn1,
+                                    self.resnet.relu,
+                                    self.resnet.maxpool)
 
         # Backbone ResNet Layers (Bottom-up Layers)
-        self.stage1 = nn.Sequential(self.resnet50.layer1)
-        self.stage2 = nn.Sequential(self.resnet50.layer2)
-        self.stage3 = nn.Sequential(self.resnet50.layer3)
-        self.stage4 = nn.Sequential(self.resnet50.layer4)
+        self.stage1 = nn.Sequential(self.resnet.layer1)
+        self.stage2 = nn.Sequential(self.resnet.layer2)
+        self.stage3 = nn.Sequential(self.resnet.layer3)
+        self.stage4 = nn.Sequential(self.resnet.layer4)
 
         # Top Layer
         self.toplayer = nn.Conv2d(
