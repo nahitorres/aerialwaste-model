@@ -21,7 +21,7 @@ Freezing the first two layers -the code of the backbone and the pre-trained weig
 
 A sigmoid function is applied over the last FC layer of the CNN to obtain the actual prediction of the model, that for the binary case of illegal landfills is a value between 0 and 1. 
 
-**Execution:** The notebook "execute_model.ipynb" provides an example of how to load the trained model and execute it on an image to obtain the classification score as well as the CAMs. A couple of example images from Google Maps are provided to allow such execution attempts.
+**Execution:** The notebook `execute_model.ipynb` provides an example of how to load the trained model and execute it on an image to obtain the classification score as well as the CAMs. A couple of example images from Google Maps are provided to allow such execution attempts.
 
 ## License
 Creative Commons CC BY licensing scheme (see LICENSE). 
