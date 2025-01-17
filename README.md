@@ -7,6 +7,8 @@ This repository contains a ResNet50+FPN architecture.
 
 **Dataset:** The architecture was trained with AerialWaste [https://aerialwaste.org/], a public dataset for illegal landfill discovery.
 
+**Weights** Weights can be found and downloaded from this Google Drive [link](https://drive.google.com/drive/folders/1xy9BDFWWFkyaw3P8npEZxpTDFxkzA3NK?usp=sharing). In order to align the repository pulled repository with the code in `execute_model.ipynb`, create a `weights` folder to contain the downloaded `checkpoint.pth` file.
+
 **Training details:** The model was trained using two GPUs Nvidia GeForce RTX 2080Ti and the following parameters:
 - Learning rate: 0.005;
 - Batch size: 12 (limited by the capacity of our server);
