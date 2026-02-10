@@ -28,7 +28,7 @@ A sigmoid function is applied over the last FC layer of the CNN to obtain the ac
 **Execution:** The notebook `execute_model.ipynb` provides an example of how to load the trained model and execute it on an image to obtain the classification score as well as the CAMs. A couple of example images from Google Maps are provided to allow such execution attempts.
 
 ## License
-Creative Commons CC BY licensing scheme (see LICENSE). 
+Attribution-NonCommercial-NoDerivatives 4.0 International (see LICENSE). 
 
 ## Cite us
 ```
